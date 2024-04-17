@@ -26,8 +26,8 @@ export class CreateShipmentUsecase {
   }
 
   private calculateShipmentFee(distance: number): number {
-    const baseRate = 5;
+    const baseRateEu = 5;
     const ratePerKilometer = 0.5;
-    return baseRate + distance * ratePerKilometer;
+    return baseRateEu + distance * ratePerKilometer;
   }
 }
